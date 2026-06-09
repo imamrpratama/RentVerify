@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RentVerify – UTM Student Housing</title>
+    <title>Rent-For-Me – UTM Student Housing</title>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
@@ -124,13 +124,12 @@
       /* ── bottom nav bar ── */
       .nav-bar {
         position: sticky;
-        bottom: 8px;
-        margin: 0 12px;
-        margin-bottom: max(8px, env(safe-area-inset-bottom));
+        bottom: 24px;
+        margin: 0 16px;
         background: var(--white);
         border-radius: 28px;
         display: flex;
-        height: 58px;
+        height: 62px;
         padding: 0 6px;
         box-shadow:
           0 8px 32px rgba(0, 0, 0, 0.14),
@@ -1460,7 +1459,7 @@
             </div>
           </div>
           <div class="s1-hero">
-            <div class="s1-logo">RentVerify</div>
+            <div class="s1-logo">Rent-For-Me</div>
             <div class="s1-tagline">We Verify The Rooms Ourselves!</div>
             <div class="home-search-row">
               <div class="home-search-box" onclick="goto(2)">
@@ -1477,7 +1476,7 @@
           </div>
           <div class="section-title">Verified Agents</div>
           <div class="section-sub">
-            All agents on RentVerify are licensed &amp; LPPEH-verified
+            All agents on Rent-For-Me are licensed &amp; LPPEH-verified
           </div>
           <div id="home-agents" class="agent-strip"></div>
           <div class="section-title">Featured Listings</div>
@@ -1761,7 +1760,7 @@
               border-radius: 14px;
             "
           >
-            🛡️ All agents on RentVerify are independently verified and licensed
+            🛡️ All agents on Rent-For-Me are independently verified and licensed
             by <strong>LPPEH Malaysia</strong>. You can trust any agent you see
             here.
           </div>
@@ -1803,7 +1802,7 @@
             <div class="verify-toggle-left">
               <div class="verify-toggle-title">Show Verified Listings Only</div>
               <div class="verify-toggle-sub">
-                Only show listings physically inspected by the RentVerify team
+                Only show listings physically inspected by the Rent-For-Me team
               </div>
             </div>
             <div
@@ -2182,7 +2181,7 @@
         const verifiedBox = l.listingVerified
           ? `<div class="verify-status-box verified">
                <div class="verify-status-title verified">✓ Personally verified listing</div>
-               <div class="verify-status-sub">A RentVerify team member has physically visited and confirmed this room matches the description. Photos and details are accurate.</div>
+               <div class="verify-status-sub">A Rent-For-Me team member has physically visited and confirmed this room matches the description. Photos and details are accurate.</div>
              </div>`
           : `<div class="verify-status-box unverified">
                <div class="verify-status-title unverified">⚠ Not personally verified</div>
