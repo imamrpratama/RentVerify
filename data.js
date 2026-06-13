@@ -6,23 +6,24 @@
 
 // ── Stock images (Unsplash) ──────────────────────────────
 const IMGS = [
-  "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&h=280&fit=crop&auto=format&q=80",   // 0  white bedroom
-  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=280&fit=crop&auto=format&q=80",   // 1  modern living room
+  "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=500&h=280&fit=crop&auto=format&q=80", // 0  white bedroom
+  "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=280&fit=crop&auto=format&q=80", // 1  modern living room
   "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=500&h=280&fit=crop&auto=format&q=80", // 2  studio apartment
   "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500&h=280&fit=crop&auto=format&q=80", // 3  bright bedroom
   "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=500&h=280&fit=crop&auto=format&q=80", // 4  warm bedroom
   "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&h=280&fit=crop&auto=format&q=80", // 5  kitchen/dining
   "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=500&h=280&fit=crop&auto=format&q=80", // 6  minimal bedroom
-  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=280&fit=crop&auto=format&q=80",   // 7  window room
+  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=280&fit=crop&auto=format&q=80", // 7  window room
   "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=500&h=280&fit=crop&auto=format&q=80", // 8  modern bedroom
   "https://images.unsplash.com/photo-1586023492125-27b2c045efd3?w=500&h=280&fit=crop&auto=format&q=80", // 9  furnished room
   "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=500&h=280&fit=crop&auto=format&q=80", // 10 apartment building
-  "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&h=280&fit=crop&auto=format&q=80",   // 11 condo exterior
+  "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&h=280&fit=crop&auto=format&q=80", // 11 condo exterior
   "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=500&h=280&fit=crop&auto=format&q=80", // 12 apartment living
-  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=280&fit=crop&auto=format&q=80",   // 13 cozy room
+  "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=280&fit=crop&auto=format&q=80", // 13 cozy room
   "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=500&h=280&fit=crop&auto=format&q=80", // 14 studio living
 ];
 
+//Update
 // ── Agents ───────────────────────────────────────────────
 const AGENTS = [
   {
@@ -30,71 +31,78 @@ const AGENTS = [
     initials: "AH",
     sub: "UTM Skudai Specialist · 12 yrs exp",
     color: "#5B5BD6",
-    about: "Ahmad has been serving UTM students for over 12 years. He specialises in studio and master room rentals within walking distance of the UTM campus, and handles all paperwork digitally.",
+    about:
+      "Ahmad has been serving UTM students for over 12 years. He specialises in studio and master room rentals within walking distance of the UTM campus, and handles all paperwork digitally.",
     license: "LPPEH/E(3)/0247 — Registered since 2012",
     stats: ["0", "4.9 ★", "< 2 hrs"],
-    statLabels: ["Listings", "Rating", "Response"]
+    statLabels: ["Listings", "Rating", "Response"],
   },
   {
     name: "Siti Rahimah",
     initials: "SR",
     sub: "Female Housing Specialist · 8 yrs exp",
     color: "#8B5CF6",
-    about: "Siti focuses on verified female-only and mixed housing in Skudai and Gelang Patah, ensuring safe and comfortable environments. All her listings include utility breakdowns.",
+    about:
+      "Siti focuses on verified female-only and mixed housing in Skudai and Gelang Patah, ensuring safe and comfortable environments. All her listings include utility breakdowns.",
     license: "LPPEH/E(3)/0481 — Registered since 2016",
     stats: ["0", "4.7 ★", "< 3 hrs"],
-    statLabels: ["Listings", "Rating", "Response"]
+    statLabels: ["Listings", "Rating", "Response"],
   },
   {
     name: "Mohd Faizal",
     initials: "MF",
     sub: "Premium Listings · 6 yrs exp",
     color: "#EC4899",
-    about: "Mohd Faizal specialises in premium condominiums and studio apartments with full amenities including pool and gym. Best choice for students seeking a higher comfort level.",
+    about:
+      "Mohd Faizal specialises in premium condominiums and studio apartments with full amenities including pool and gym. Best choice for students seeking a higher comfort level.",
     license: "LPPEH/E(3)/0612 — Registered since 2018",
     stats: ["0", "4.8 ★", "< 4 hrs"],
-    statLabels: ["Listings", "Rating", "Response"]
+    statLabels: ["Listings", "Rating", "Response"],
   },
   {
     name: "Lee Wei Xian",
     initials: "LW",
     sub: "Budget & Mid-Range · 5 yrs exp",
     color: "#0EA5E9",
-    about: "Lee specialises in budget-friendly options for students on tight budgets. All listings are competitively priced with transparent, no-hidden-fee pricing.",
+    about:
+      "Lee specialises in budget-friendly options for students on tight budgets. All listings are competitively priced with transparent, no-hidden-fee pricing.",
     license: "LPPEH/E(3)/0704 — Registered since 2019",
     stats: ["0", "4.3 ★", "< 6 hrs"],
-    statLabels: ["Listings", "Rating", "Response"]
+    statLabels: ["Listings", "Rating", "Response"],
   },
   {
     name: "Nurul Ain",
     initials: "NA",
     sub: "Nusajaya & JB Central · 7 yrs exp",
     color: "#F97316",
-    about: "Nurul Ain covers Nusajaya, Bukit Indah, and Johor Bahru City Centre — ideal for students doing internships or seeking cheaper rooms with good MRT access.",
+    about:
+      "Nurul Ain covers Nusajaya, Bukit Indah, and Johor Bahru City Centre — ideal for students doing internships or seeking cheaper rooms with good MRT access.",
     license: "LPPEH/E(3)/0558 — Registered since 2017",
     stats: ["0", "4.6 ★", "< 3 hrs"],
-    statLabels: ["Listings", "Rating", "Response"]
+    statLabels: ["Listings", "Rating", "Response"],
   },
   {
     name: "David Lim",
     initials: "DL",
     sub: "JB City Specialist · 10 yrs exp",
     color: "#10B981",
-    about: "David manages premium and mid-range properties in downtown Johor Bahru, close to business districts, shopping centres, and the Causeway — great for students with city internships.",
+    about:
+      "David manages premium and mid-range properties in downtown Johor Bahru, close to business districts, shopping centres, and the Causeway — great for students with city internships.",
     license: "LPPEH/E(3)/0322 — Registered since 2014",
     stats: ["0", "4.5 ★", "< 5 hrs"],
-    statLabels: ["Listings", "Rating", "Response"]
+    statLabels: ["Listings", "Rating", "Response"],
   },
   {
     name: "Priya Ramasamy",
     initials: "PR",
     sub: "Pulai & Tampoi Corridor · 4 yrs exp",
     color: "#EF4444",
-    about: "Priya serves the Pulai and Tampoi corridor, offering a mix of affordable and mid-range listings with strong highway connectivity. Particularly active in female-friendly housing.",
+    about:
+      "Priya serves the Pulai and Tampoi corridor, offering a mix of affordable and mid-range listings with strong highway connectivity. Particularly active in female-friendly housing.",
     license: "LPPEH/E(3)/0891 — Registered since 2020",
     stats: ["0", "4.4 ★", "< 4 hrs"],
-    statLabels: ["Listings", "Rating", "Response"]
-  }
+    statLabels: ["Listings", "Rating", "Response"],
+  },
 ];
 
 // ── Listings ─────────────────────────────────────────────
@@ -103,7 +111,6 @@ const AGENTS = [
 // dist: descriptive proximity label shown on cards
 // img: IMGS[index] or null (falls back to gradient + emoji)
 const LISTINGS = [
-
   // ════ VERIFIED — NEAR UTM (walking distance < 10 min) ════
   {
     id: 0,
@@ -122,7 +129,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#C7D2FE,#A5B4FC)",
     emoji: "🏠",
     img: IMGS[0],
-    features: ["🛋 Fully furnished", "📶 WiFi included", "❄️ Air-con", "🚿 Private bathroom"],
+    features: [
+      "🛋 Fully furnished",
+      "📶 WiFi included",
+      "❄️ Air-con",
+      "🚿 Private bathroom",
+    ],
   },
   {
     id: 1,
@@ -160,7 +172,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FBCFE8,#F9A8D4)",
     emoji: "🛏",
     img: IMGS[4],
-    features: ["🚿 Ensuite bathroom", "🛋 Fully furnished", "❄️ Air-con", "📶 500 Mbps WiFi"],
+    features: [
+      "🚿 Ensuite bathroom",
+      "🛋 Fully furnished",
+      "❄️ Air-con",
+      "📶 500 Mbps WiFi",
+    ],
   },
   {
     id: 3,
@@ -179,7 +196,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FDE68A,#FCD34D)",
     emoji: "🏠",
     img: IMGS[13],
-    features: ["👩 Female tenants only", "🛋 Furnished", "🧺 Washer provided", "📶 WiFi"],
+    features: [
+      "👩 Female tenants only",
+      "🛋 Furnished",
+      "🧺 Washer provided",
+      "📶 WiFi",
+    ],
   },
   {
     id: 4,
@@ -198,7 +220,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#BAE6FD,#7DD3FC)",
     emoji: "🏗",
     img: IMGS[14],
-    features: ["🍳 Separate kitchen", "🛋 Fully furnished", "❄️ Air-con", "🅿️ Parking"],
+    features: [
+      "🍳 Separate kitchen",
+      "🛋 Fully furnished",
+      "❄️ Air-con",
+      "🅿️ Parking",
+    ],
   },
 
   // ════ VERIFIED — MID-RANGE (bus or 10–25 min walk) ════
@@ -238,7 +265,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FCE7F3,#FBCFE8)",
     emoji: "🛏",
     img: IMGS[8],
-    features: ["🛋 Fully furnished", "🚿 Private bathroom", "🅿️ Parking", "📶 WiFi"],
+    features: [
+      "🛋 Fully furnished",
+      "🚿 Private bathroom",
+      "🅿️ Parking",
+      "📶 WiFi",
+    ],
   },
   {
     id: 7,
@@ -276,7 +308,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#E0E7FF,#C7D2FE)",
     emoji: "🏠",
     img: IMGS[6],
-    features: ["🛋 Furnished", "🧺 Shared laundry", "📶 WiFi", "💰 Bills included"],
+    features: [
+      "🛋 Furnished",
+      "🧺 Shared laundry",
+      "📶 WiFi",
+      "💰 Bills included",
+    ],
   },
   {
     id: 9,
@@ -314,7 +351,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#CFFAFE,#A5F3FC)",
     emoji: "🏡",
     img: IMGS[1],
-    features: ["🛋 Fully furnished", "🚿 Attached bathroom", "📶 500 Mbps WiFi", "🛡 CCTV"],
+    features: [
+      "🛋 Fully furnished",
+      "🚿 Attached bathroom",
+      "📶 500 Mbps WiFi",
+      "🛡 CCTV",
+    ],
   },
   {
     id: 11,
@@ -333,7 +375,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FDF4FF,#FAE8FF)",
     emoji: "🏠",
     img: IMGS[13],
-    features: ["👩 Female tenants only", "🛋 Fully furnished", "🧺 Washer provided", "📶 WiFi"],
+    features: [
+      "👩 Female tenants only",
+      "🛋 Fully furnished",
+      "🧺 Washer provided",
+      "📶 WiFi",
+    ],
   },
   {
     id: 12,
@@ -352,7 +399,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#ECFDF5,#D1FAE5)",
     emoji: "🏡",
     img: IMGS[12],
-    features: ["🏠 3 bedrooms", "🛋 Fully furnished", "🅿️ 2 parking spots", "🧺 Washer & dryer"],
+    features: [
+      "🏠 3 bedrooms",
+      "🛋 Fully furnished",
+      "🅿️ 2 parking spots",
+      "🧺 Washer & dryer",
+    ],
   },
   {
     id: 13,
@@ -371,7 +423,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FFF7ED,#FED7AA)",
     emoji: "🏠",
     img: IMGS[3],
-    features: ["👩 Female only", "🛋 Fully furnished", "🧴 Clean bathroom", "📶 WiFi"],
+    features: [
+      "👩 Female only",
+      "🛋 Fully furnished",
+      "🧴 Clean bathroom",
+      "📶 WiFi",
+    ],
   },
 
   // ════ VERIFIED — FAR FROM UTM (car needed, 25–40 min) ════
@@ -392,7 +449,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#EDE9FE,#DDD6FE)",
     emoji: "🏢",
     img: IMGS[11],
-    features: ["🛡 Gated & guarded", "🛋 Brand new furniture", "🅿️ Covered parking", "🏊 Pool access"],
+    features: [
+      "🛡 Gated & guarded",
+      "🛋 Brand new furniture",
+      "🅿️ Covered parking",
+      "🏊 Pool access",
+    ],
   },
   {
     id: 15,
@@ -411,7 +473,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FCE7F3,#FBCFE8)",
     emoji: "🛏",
     img: IMGS[4],
-    features: ["📚 Study desk & chair", "🛋 Fully furnished", "❄️ Air-con", "📶 WiFi"],
+    features: [
+      "📚 Study desk & chair",
+      "🛋 Fully furnished",
+      "❄️ Air-con",
+      "📶 WiFi",
+    ],
   },
   {
     id: 16,
@@ -430,7 +497,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FEE2E2,#FECACA)",
     emoji: "🏢",
     img: IMGS[0],
-    features: ["🛋 Fully furnished", "❄️ Air-con", "🅿️ Free parking", "📶 Fibre WiFi"],
+    features: [
+      "🛋 Fully furnished",
+      "❄️ Air-con",
+      "🅿️ Free parking",
+      "📶 Fibre WiFi",
+    ],
   },
   {
     id: 17,
@@ -468,7 +540,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#FFF7ED,#FFEDD5)",
     emoji: "🏢",
     img: IMGS[10],
-    features: ["🏋 Gym access", "🏊 Swimming pool", "🛡 24-hr security", "🅿️ Covered parking"],
+    features: [
+      "🏋 Gym access",
+      "🏊 Swimming pool",
+      "🛡 24-hr security",
+      "🅿️ Covered parking",
+    ],
   },
   {
     id: 19,
@@ -487,7 +564,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#ECFDF5,#D1FAE5)",
     emoji: "🏡",
     img: IMGS[12],
-    features: ["🏠 3 bedrooms", "🛋 Fully furnished", "🛒 Mall nearby", "🅿️ 2 parking spots"],
+    features: [
+      "🏠 3 bedrooms",
+      "🛋 Fully furnished",
+      "🛒 Mall nearby",
+      "🅿️ 2 parking spots",
+    ],
   },
 
   // ════ VERIFIED — DOWNTOWN JB (35–50 min, great for internships) ════
@@ -508,7 +590,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#DCFCE7,#BBF7D0)",
     emoji: "🏙",
     img: IMGS[14],
-    features: ["🚇 MRT station nearby", "🛋 Fully furnished", "🏙 City view", "📶 Fibre WiFi"],
+    features: [
+      "🚇 MRT station nearby",
+      "🛋 Fully furnished",
+      "🏙 City view",
+      "📶 Fibre WiFi",
+    ],
   },
   {
     id: 21,
@@ -527,7 +614,12 @@ const LISTINGS = [
     color: "linear-gradient(135deg,#F0FDF4,#DCFCE7)",
     emoji: "🏢",
     img: IMGS[1],
-    features: ["🚇 5 min to MRT", "🛋 Fully furnished", "❄️ Air-con", "🏪 Mall nearby"],
+    features: [
+      "🚇 5 min to MRT",
+      "🛋 Fully furnished",
+      "❄️ Air-con",
+      "🏪 Mall nearby",
+    ],
   },
   {
     id: 22,
